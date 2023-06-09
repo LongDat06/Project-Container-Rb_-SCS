@@ -11,5 +11,7 @@ b = Item.new("BARE",50,500,1000,5,"TBA",2)
 container.additems(a)
 container.additems(b)
 
-container.container_type
+Container.price_container(container)
+
+# container.container_type_action
 
