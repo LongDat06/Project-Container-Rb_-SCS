@@ -12,6 +12,6 @@ container.additems(a)
 container.additems(b)
 
 Container.price_container(container)
-
-# container.container_type_action
+Item.total_item
+container.container_type_action
 

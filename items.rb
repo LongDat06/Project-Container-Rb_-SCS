@@ -11,6 +11,7 @@ class Item
 		@weight = weight
 		@cog_height_type = cog_height_type
 		@cog_height = cog_height
+		@@count = 0
 	end
 
 	def set_height_max(height_max)
@@ -18,6 +19,11 @@ class Item
 	end
 	
 	def self.price_item(item)
+		@@count  += 1
 		puts "#{item.packing_style} #{item.length} ..."
+	end
+
+	def self.total_item
+		puts "Số Item: #{@@count}"
 	end
 end
